@@ -14,3 +14,8 @@ elif celsius >= 100:
     state = "Пар"
 else:
     state = "Жидкость"
+# Вывод результатов
+print("=== КОНВЕРТЕР ТЕМПЕРАТУР ===")
+print(f"Температура: {celsius}°C")
+print(f"Температура: {fahrenheit}°F")
+print(f"Состояние воды: {state}")
