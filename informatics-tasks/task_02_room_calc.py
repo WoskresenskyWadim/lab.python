@@ -15,4 +15,18 @@ volume = length * width * height  # объём помещения
 
 # Стоимость покраски стен
 total_paint_cost = wall_area * paint_cost_per_m2
+# Вывод результатов с округлением до 2 знаков
+print("=== ГЕОМЕТРИЧЕСКИЕ ПАРАМЕТРЫ ПОМЕЩЕНИЯ ===")
+print(f"Длина: {length} м")
+print(f"Ширина: {width} м")
+print(f"Высота: {height} м")
+print()
+print("=== РЕЗУЛЬТАТЫ РАСЧЁТОВ ===")
+print(f"Площадь пола: {round(floor_area, 2)} м²")
+print(f"Площадь стен: {round(wall_area, 2)} м²")
+print(f"Объём помещения: {round(volume, 2)} м³")
+print()
+print("=== СТОИМОСТЬ ПОКРАСКИ ===")
+print(f"Стоимость покраски 1 м²: {paint_cost_per_m2} руб")
+print(f"Общая стоимость покраски стен: {round(total_paint_cost, 2)} руб")
 
